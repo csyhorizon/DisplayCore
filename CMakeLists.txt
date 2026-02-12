@@ -14,8 +14,13 @@ qt_add_executable(appdisplayCore
 
 qt_add_qml_module(appdisplayCore
     URI displayCore
+    VERSION 1.0
     QML_FILES
-        Main.qml
+        ui/Main.qml
+        ui/components/Header.qml
+        ui/components/Footer.qml
+        QML_FILES ui/components/Header.qml
+        QML_FILES ui/components/Footer.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
